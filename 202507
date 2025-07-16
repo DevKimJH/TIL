@@ -58,3 +58,100 @@ D. 8080
 docker stop webserver 명령어의 목적은 무엇인가요?
 
 정답 예시: webserver라는 이름의 컨테이너를 정지한다
+
+------------------------------------------------------------
+
+✅ 예외 처리 복습 퀴즈
+
+🧩 기본 개념
+1. (OX)
+자바에서 예외는 객체이며, 모든 예외의 최상위 부모 클래스는 Throwable이다.
+
+정답: O
+2. (객관식)
+다음 중 애플리케이션에서 복구가 불가능한 예외는 무엇인가?
+A. Exception
+B. Error
+C. RuntimeException
+D. IOException
+
+정답: B
+3. (OX)
+RuntimeException은 체크 예외에 포함된다.
+
+정답: X
+4. (단답형)
+throw 키워드는 예외를 ( ) 시킬 때 사용한다.
+
+정답: 발생
+5. (객관식)
+다음 중 자바 예외 처리 키워드가 아닌 것은?
+A. try
+B. throw
+C. catch
+D. check
+
+정답: D
+🧩 예외 처리 흐름
+6. (객관식)
+connect() 메서드가 실패하면 반드시 send()를 호출하지 않아야 하는 이유는?
+A. 프로그램이 종료되기 때문
+B. 이미 데이터가 전송됐기 때문
+C. 연결되지 않은 상태에서 데이터를 전송하면 오류가 발생하기 때문
+D. 메모리를 많이 쓰기 때문
+
+정답: C
+7. (OX)
+disconnect()는 connect() 또는 send()에서 오류가 발생해도 반드시 호출되어야 한다.
+
+정답: O
+8. (객관식)
+NetworkClientV1에서 입력 문자열에 따라 오류를 설정하는 메서드는?
+A. sendError()
+B. errorCheck()
+C. initError(String data)
+D. validate(String data)
+
+정답: C
+9. (단답형)
+다음 중 connect()와 send() 중 하나라도 실패하면 disconnect()를 호출하지 못하는 문제를 해결한 코드 버전은?
+
+정답: NetworkServiceV1_3
+10. (객관식)
+다음 중 NetworkServiceV1_2와 V1_3의 차이점으로 가장 적절한 것은?
+A. V1_2는 에러 메시지를 출력하지 않음
+B. V1_3은 항상 disconnect()를 호출함
+C. V1_2는 initError()를 호출하지 않음
+D. V1_3은 send()를 먼저 호출함
+
+정답: B
+🧩 자바 예외 계층과 처리 방식
+11. (객관식)
+Exception을 상속받은 사용자 정의 예외는 기본적으로 어떤 예외인가?
+A. 언체크 예외
+B. 시스템 예외
+C. 체크 예외
+D. 무시 가능한 예외
+
+정답: C
+12. (단답형)
+예외를 발생시키려면 new 예외클래스()와 throw 키워드를 함께 사용해야 한다.
+예: throw new ( );
+
+정답: MyCheckedException
+13. (객관식)
+다음 중 체크 예외를 반드시 처리해야 하는 방식이 아닌 것은?
+A. try-catch로 처리
+B. throws로 밖으로 던짐
+C. 아무 처리 없이 무시함
+D. 위 두 방식 중 하나
+
+정답: C
+14. (OX)
+Exception을 catch 하면 그 하위 예외들도 함께 처리할 수 있다.
+
+정답: O
+15. (단답형)
+예외 객체의 메시지를 확인하기 위해 사용하는 메서드는?
+
+정답: getMessage()
